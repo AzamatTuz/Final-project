@@ -8,7 +8,7 @@ function Header(props) {
 
   return (
     <header id='header' className={props.className}>
-        <img className='' onClick={() => navigate('/')} src="public/images/logo.png" alt="" />
+        <img className='' onClick={() => navigate('/')} src="/images/logo.png" alt="" />
         <HeaderNav/>
     </header>
   )

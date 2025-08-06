@@ -16,12 +16,12 @@ function About() {
                     <p className='text-xl'>Peer-to-Peer жалға беру платформасы – адамдар өз заттарын басқа қолданушыларға белгілі бір уақытқа жалға бере алатын цифрлық алаң.</p>
                     <p className='text-xl'>Біздің мақсатымыз – пайдаланылмай тұрған пайдалы заттарды қайта айналымға енгізу арқылы адамдарға қосымша табыс табуға және қажет заттарды ыңғайлы жолмен қолдануға мүмкіндік беру.</p>
                 </article>
-                <img className='w-130' src="public/images/aboutimage.png" alt="" />
+                <img className='w-130' src="/images/aboutimage.png" alt="" />
             </section>
             
-            <img className='absolute rotate-[15deg] origin-left z-0 top-[80%]' src="public/images/linemin.png" alt="" />
-            <img className='absolute z-0 top-[80%]' src="public/images/linemin.png" alt="" />
-            <img className='absolute rotate-[-15deg] origin-left z-0 top-[80%]' src="public/images/linemin.png" alt="" />
+            <img className='absolute rotate-[15deg] origin-left z-0 top-[80%]' src="/images/linemin.png" alt="" />
+            <img className='absolute z-0 top-[80%]' src="/images/linemin.png" alt="" />
+            <img className='absolute rotate-[-15deg] origin-left z-0 top-[80%]' src="/images/linemin.png" alt="" />
             
             <section className='relaitve z-2 bg-white w-full shadow-2xl p-8 rounded-3xl flex justify-around mb-30'>
 

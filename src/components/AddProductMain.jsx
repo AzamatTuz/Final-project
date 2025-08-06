@@ -81,7 +81,7 @@ function AddProductMain() {
     <main className='mt-40 mb-50 flex flex-col items-center justify-center w-full gap-15'>
         <h1 className='text-5xl text-[#534239] font-bold'>Жалға беру</h1>
         <form onSubmit={handleSubmit} className='flex w-[80%] gap-10'>
-            <label className='w-[50%] overflow-hidden bg-[#7a361146] border-3 border-[#534239] text-[#534239] text-3xl flex flex-col items-center justify-center rounded-2xl cursor-pointer' htmlFor="product_image"><img src={preview ? preview : "public/images/image.png"} className={`${preview ? '' : 'w-30'}`} alt="" />{preview ?'' : 'Сурет қою'}</label>
+            <label className='w-[50%] overflow-hidden bg-[#7a361146] border-3 border-[#534239] text-[#534239] text-3xl flex flex-col items-center justify-center rounded-2xl cursor-pointer' htmlFor="product_image"><img src={preview ? preview : "/images/image.png"} className={`${preview ? '' : 'w-30'}`} alt="" />{preview ?'' : 'Сурет қою'}</label>
             <input accept="image/*" onChange={handleImageChange} className='form-file' id='product_image' type="file" />
             <section className='flex flex-col w-[50%] gap-5'>
                 <input value={productName} onChange={(e) => setProductName(e.target.value)} placeholder='Заттың аты' className='pl-5 text-[#534239] font-medium outline-none border-3 rounded-full p-2 border-[#534239] placeholder:text-[#534239]' type="text" name="" id="" />

@@ -51,7 +51,7 @@ function FavoriteMain() {
                     <img className='w-70 h-70 object-cover rounded-2xl' src={`https://peer2p-back.onrender.com/uploads/${item.product_image}`} alt="" />
                     <h3 className='text-xl font-medium'>{item.name}</h3>
                     <Link to={`/product/${item.id}`} className='bg-[#ADC178] text-center authBtn w-full p-2 text-white font-semibold rounded-lg cursor-pointer'><span className='relative z-3'>Қарау</span></Link>
-                    <button type='button' onClick={() => deleteOnFavourite(item.id)} className='bg-[#ADC178] w-fit p-4 rounded-full cursor-pointer absolute top-[-20px] right-[-20px]'><img className='w-6' src="public/images/cancel.png" alt="" /></button>
+                    <button type='button' onClick={() => deleteOnFavourite(item.id)} className='bg-[#ADC178] w-fit p-4 rounded-full cursor-pointer absolute top-[-20px] right-[-20px]'><img className='w-6' src="/images/cancel.png" alt="" /></button>
                 </article>  
 
             )}

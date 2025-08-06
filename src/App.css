@@ -17,7 +17,7 @@ html {
 }
 
 .bg-image {
-    background: url(public/images/fone.png);
+    background: url(/images/fone.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

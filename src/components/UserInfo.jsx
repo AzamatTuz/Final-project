@@ -15,12 +15,12 @@ function UserInfo({user, setIsClick, isClick}) {
   return (
     <section className='flex gap-5 h-fit justify-around w-[75%] mt-5'>
         <article className='flex flex-col gap-3'>
-            <h2 className='text-3xl font-bold flex items-center gap-2'>{user.username} <img className='w-10 h-10 p-3 rounded-full bg-[#ADC178]' src={user.is_verification ? 'public/images/galochka.png' : 'public/images/cancel.png'} alt="" /></h2>
+            <h2 className='text-3xl font-bold flex items-center gap-2'>{user.username} <img className='w-10 h-10 p-3 rounded-full bg-[#ADC178]' src={user.is_verification ? '/images/galochka.png' : '/images/cancel.png'} alt="" /></h2>
             <h3 className='text-2xl font-medium'>{user.email}</h3>
             <h4 className='text-xl'>{user.phone_number ? `${user.phone_number}` : 'Телефон номер жоқ'}</h4>
             </article>
             <article className='flex flex-col justify-between items-center'>
-            <span onClick={() => setIsClick(!isClick)} className='flex items-center text-2xl font-medium gap-3 hoverEffect'>Верификация жасау <img className='bg-[#ADC178] p-2 w-7 rounded-[100px]' src="public/images/pen.png" alt="" /></span>
+            <span onClick={() => setIsClick(!isClick)} className='flex items-center text-2xl font-medium gap-3 hoverEffect'>Верификация жасау <img className='bg-[#ADC178] p-2 w-7 rounded-[100px]' src="/images/pen.png" alt="" /></span>
             <h3 className='text-2xl font-medium'>Тапқан ақша құны</h3> 
             <h1 className='text-center text-4xl font-extrabold'>{user.earned} тг</h1>
         </article>

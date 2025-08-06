@@ -21,7 +21,7 @@ function Auth() {
           <Register/>
         </section>
         <SakuraFall/>
-        <img className={`absolute animated top-0 h-[112%] ${isClick ? 'left-0' : 'left-[50%]'}`} src="public/images/bg1.jpg" alt="" />
+        <img className={`absolute animated top-0 h-[112%] ${isClick ? 'left-0' : 'left-[50%]'}`} src="/images/bg1.jpg" alt="" />
     </main>
     </AuthContext.Provider>
     </>

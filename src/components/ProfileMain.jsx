@@ -141,8 +141,8 @@ function ProfileMain() {
                   <img className='w-70 h-70 object-cover rounded-2xl' src={`https://peer2p-back.onrender.com/uploads/${product.product_image}`} alt="" />
                   <h3 className='text-xl font-medium'>{product.name}</h3>
                   <Link to={`/product/${product.id}`} className='bg-[#ADC178] text-center authBtn w-full p-2 text-white font-semibold rounded-lg cursor-pointer'><span className='relative z-3'>Қарау</span></Link>
-                  <button onClick={() => {setDeleteId(product.id), setIsDelete(!product.is_rent && true)}} className='bg-[#ADC178] p-2 text-white font-semibold rounded-full cursor-pointer absolute w-13 h-13 flex items-center justify-center top-[-20px] left-[-20px]'><img className='w-4' src="public/images/delete.png" alt="" /></button>
-                  <button onClick={() => {setIsEdit(!product.is_rent && true), setEditId(product.id)}} className='bg-[#ADC178] p-2 text-white font-semibold rounded-full cursor-pointer absolute w-13 h-13 flex items-center justify-center top-[-20px] right-[-20px]'><img className='w-4' src="public/images/pen.png" alt="" /></button>
+                  <button onClick={() => {setDeleteId(product.id), setIsDelete(!product.is_rent && true)}} className='bg-[#ADC178] p-2 text-white font-semibold rounded-full cursor-pointer absolute w-13 h-13 flex items-center justify-center top-[-20px] left-[-20px]'><img className='w-4' src="/images/delete.png" alt="" /></button>
+                  <button onClick={() => {setIsEdit(!product.is_rent && true), setEditId(product.id)}} className='bg-[#ADC178] p-2 text-white font-semibold rounded-full cursor-pointer absolute w-13 h-13 flex items-center justify-center top-[-20px] right-[-20px]'><img className='w-4' src="/images/pen.png" alt="" /></button>
               </article>  
 
             )}

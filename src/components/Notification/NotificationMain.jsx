@@ -76,7 +76,7 @@ function NotificationMain() {
                     
                         {item.answer == 'true' &&  <p className='text-xl font-bold'> Келісім берілді</p>}
                         {item.answer == 'false' &&  <p className='text-xl font-bold'> Келісім берілмеді</p>}
-                        {item.answer == 'false' &&  <button onClick={() => deleteNotifi(item.notification_id)} className='bg-[#ADC178] p-2 text-white font-semibold rounded-full cursor-pointer absolute w-13 h-13 flex items-center justify-center top-[-20px] left-[-20px]'><img className='w-4' src="public/images/delete.png" alt="" /></button>}
+                        {item.answer == 'false' &&  <button onClick={() => deleteNotifi(item.notification_id)} className='bg-[#ADC178] p-2 text-white font-semibold rounded-full cursor-pointer absolute w-13 h-13 flex items-center justify-center top-[-20px] left-[-20px]'><img className='w-4' src="/images/delete.png" alt="" /></button>}
                         {item.answer == 'start' && <p>Жалға алу басталды</p>}
                     
                     </div>}

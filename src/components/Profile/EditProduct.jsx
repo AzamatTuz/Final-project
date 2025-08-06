@@ -100,7 +100,7 @@ function EditProduct({ setIsEdit, isEdit, id, getProducts, userId }) {
   return (
     <section className='verif-window flex items-center justify-around'>
         <form onSubmit={editProduct} className='bg-white p-5 gap-5 flex flex-col rounded-2xl relative z-40 mt-5'>
-            <button type='button' onClick={() => setIsEdit(!isEdit)} className='bg-[#ADC178] w-fit p-4 rounded-full cursor-pointer absolute top-[-20px] right-[-20px]'><img className='w-6' src="public/images/cancel.png" alt="" /></button>
+            <button type='button' onClick={() => setIsEdit(!isEdit)} className='bg-[#ADC178] w-fit p-4 rounded-full cursor-pointer absolute top-[-20px] right-[-20px]'><img className='w-6' src="/images/cancel.png" alt="" /></button>
             <h1 className='text-center text-3xl font-medium'>Өзгерту</h1>
             <input placeholder='Заттың аты' className='bg-[#ADC178] text-white outline-none border-none placeholder:text-white p-3 w-100 rounded-xl' value={nameValue} onChange={(e) => setNameValue(e.target.value)} type="text" />
             <select value={categoryValue} className='bg-[#ADC178]  text-white outline-none border-none placeholder:text-white p-3 w-100 rounded-xl' onChange={(e) => setCategoryValue(e.target.value)}>
@@ -128,7 +128,7 @@ function EditProduct({ setIsEdit, isEdit, id, getProducts, userId }) {
         </form>
 
         <article className='absolute left-4'>
-            <label className='w-[30%] overflow-hidden border-3 border-[#ADC178] text-[#ADC178] text-3xl flex flex-col items-center justify-center rounded-2xl cursor-pointer' htmlFor="product_image"><img src={preview ? preview : "public/images/image.png"} className={`${preview ? '' : 'w-30'}`} alt="" />{preview ?'' : 'Сурет қою'}</label>
+            <label className='w-[30%] overflow-hidden border-3 border-[#ADC178] text-[#ADC178] text-3xl flex flex-col items-center justify-center rounded-2xl cursor-pointer' htmlFor="product_image"><img src={preview ? preview : "/images/image.png"} className={`${preview ? '' : 'w-30'}`} alt="" />{preview ?'' : 'Сурет қою'}</label>
             <input accept="image/*" onChange={handleImageChange} className='form-file' id='product_image' type="file" />
         </article>
         

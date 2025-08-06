@@ -34,12 +34,12 @@ function HeaderNav() {
 
   return (
     <nav className="flex justify-between w-full pl-22 pr-15">
-      <HeaderBtns to="/" text="Home" icon="public/images/Home.png" />
-      <HeaderBtns to="/about" text="About" icon="public/images/About.png" />
-      <HeaderBtns to="/catalog" text="Catalog" icon="public/images/Catalog.png" />
-      <HeaderBtns to="/favourites" text="Favourites" icon="public/images/heart_head.png"/>
-      <HeaderBtns to="/notifications" text="Notification" icon="public/images/Chats.png" />
-      {isLoged ? <Link to={"/profile"}><img className="w-15 bg-white rounded-full border-2 border-[#ADC178]" src={`https://peer2p-back.onrender.com/uploads/${profileImage}`} alt=""/></Link> : <HeaderBtns to="/authorization" text="Login/Register" icon="public/images/Login.png" />}
+      <HeaderBtns to="/" text="Home" icon="/images/Home.png" />
+      <HeaderBtns to="/about" text="About" icon="/images/About.png" />
+      <HeaderBtns to="/catalog" text="Catalog" icon="/images/Catalog.png" />
+      <HeaderBtns to="/favourites" text="Favourites" icon="/images/heart_head.png"/>
+      <HeaderBtns to="/notifications" text="Notification" icon="/images/Chats.png" />
+      {isLoged ? <Link to={"/profile"}><img className="w-15 bg-white rounded-full border-2 border-[#ADC178]" src={`https://peer2p-back.onrender.com/uploads/${profileImage}`} alt=""/></Link> : <HeaderBtns to="/authorization" text="Login/Register" icon="/images/Login.png" />}
     </nav>
 
   );

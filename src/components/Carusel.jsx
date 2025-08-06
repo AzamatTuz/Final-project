@@ -10,7 +10,7 @@ function Carusel() {
     },[carusel])
   return (
     <>
-    <button onClick={() => carusel.scrollLeft -= 1500} className="z-20 cursor-pointer w-15 flex items-center justify-center rounded-full h-15 absolute top-110 left-[-20px] bg-[#ADC178]"> <img className="w-[13px]" src="public/images/Arrow.png" alt="" /></button>
+    <button onClick={() => carusel.scrollLeft -= 1500} className="z-20 cursor-pointer w-15 flex items-center justify-center rounded-full h-15 absolute top-110 left-[-20px] bg-[#ADC178]"> <img className="w-[13px]" src="/images/Arrow.png" alt="" /></button>
     
     <section  id="carusel" className="flex z-10 relative top-50 overflow-x-scroll w-329 scrollNone scroll-smooth">
         
@@ -25,7 +25,7 @@ function Carusel() {
       
     </section>
     
-    <button onClick={() => carusel.scrollLeft += 1500} className="z-20 cursor-pointer rotate-[180deg] w-15 flex items-center justify-center rounded-full h-15 absolute top-110 right-[-20px] bg-[#ADC178]"> <img className="w-[13px]" src="public/images/Arrow.png" alt="" /></button>
+    <button onClick={() => carusel.scrollLeft += 1500} className="z-20 cursor-pointer rotate-[180deg] w-15 flex items-center justify-center rounded-full h-15 absolute top-110 right-[-20px] bg-[#ADC178]"> <img className="w-[13px]" src="/images/Arrow.png" alt="" /></button>
     </>
   );
 }

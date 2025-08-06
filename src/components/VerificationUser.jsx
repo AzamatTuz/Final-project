@@ -67,7 +67,7 @@ function VerificationUser({ setIsClick, isClick, id }) {
   return (
     <section  className='verif-window flex items-center justify-center '>
         <form onSubmit={handleSubmit} className='bg-white p-5 gap-5 flex flex-col rounded-2xl relative'>
-            <button type='button' onClick={() => setIsClick(!isClick)} className='bg-[#ADC178] w-fit p-4 rounded-full cursor-pointer absolute top-[-20px] right-[-20px]'><img className='w-6' src="public/images/cancel.png" alt="" /></button>
+            <button type='button' onClick={() => setIsClick(!isClick)} className='bg-[#ADC178] w-fit p-4 rounded-full cursor-pointer absolute top-[-20px] right-[-20px]'><img className='w-6' src="/images/cancel.png" alt="" /></button>
             <h1 className='text-center text-3xl font-medium'>Верификация</h1>
             <input ref={inputRef} placeholder="+7 (7__) ___-__-__" onChange={(e) => setPhone(e.target.value.toString())} className='bg-[#ADC178] text-white outline-none border-none placeholder:text-white p-3 w-100 rounded-xl' type="text" />
             <select className='bg-[#ADC178]  text-white outline-none border-none placeholder:text-white p-3 w-100 rounded-xl' onChange={(e) => setCityId(e.target.value)}>

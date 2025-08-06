@@ -70,8 +70,8 @@ async function handleSubmit(e) {
         <input onChange={(e) => setPassword(e.target.value.trim())} type="password" className={inputStyle} placeholder='Құпия сөз . . .'/>
         <input onChange={(e) => setSecPassword(e.target.value.trim())} type="password" className={inputStyle} placeholder='Құпия сөзді тексеру . . .'/>
         <div className='flex justify-between '>
-            <button className={btnStyle}><img className='w-8' src="public/images/devicon_google.png" alt="" />Google арқылы</button>
-            <button className={btnStyle}><img className='w-8' src="public/images/Vectorв.png" alt="" />Vk арқылы</button>
+            <button className={btnStyle}><img className='w-8' src="/images/devicon_google.png" alt="" />Google арқылы</button>
+            <button className={btnStyle}><img className='w-8' src="/images/Vectorв.png" alt="" />Vk арқылы</button>
         </div>
         {errorMessage && <p className='text-red-500 '>{errorMessage}</p>}
         <button className={`${inputStyle} authBtn mt-[-10px] font-bold text-2xl text-center cursor-pointer`}><p className=' relative z-3'>Тіркелу</p></button>
