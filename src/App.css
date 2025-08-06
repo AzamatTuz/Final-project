@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+.customFont {
+    font-family: "Hammersmith One", sans-serif;
+}
+
+.scrollNone::-webkit-scrollbar {
+    display: none   ;
+}
+
+.bg-image {
+    background: url(public/images/fone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.underlineText {
+    position: relative;
+}
+
+.underlineText:before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+.underlineText:hover:before {
+    transform: scaleX(1);
+}
+
+.shadowed {
+    box-shadow: 0 -10px 40px rgb(185, 185, 185);
+}
+
+textarea {
+  resize: none;
+}
+
+.auth-span {
+    text-decoration: underline;
+}
+
+.form-file {
+    display: none;
+}
+
+.label-image {
+    display: block;
+    padding: 10px;
+    background: #ADC178;
+    width: fit-content;
+    border-radius: 100%;
+    position: absolute;
+    top: -140px;
+    right: -120px;
+    cursor: pointer;
+
+    &:hover {
+        background: #9cae6c;
+    }
+}
+
+.hoverEffect {
+    position: relative;
+    cursor: pointer;
+}
+
+.hoverEffect:before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #000000;
+    border-radius: 50px;
+    transition: all 0.2s linear;
+    
+}
+
+.hoverEffect:hover:before {
+    width: 100%;
+}
+
+.verif-window {
+    position: fixed;
+    background: #00000065;
+    width: 100%;
+    min-height: 100vh;
+    top: 0px;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+}
+
+.genderRadio {
+    display: none;
+}
+
+.image-in-bg-auth {
+    background: url(./assets/6848122.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.animated {
+    transition: all 1s ease-in-out;
+}
+
+.myinput::before { 
+    content: '';
+    position: absolute;
+    top: 2px; 
+    left: 10px;
+    width: 100% ;
+    background-image: url("./assets/Vector.png");
+    background-repeat: no-repeat;
+}
+
+.preview {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #00000058;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.close-window {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #00000073;
+    backdrop-filter: blur(15px);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authBtn {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.authBtn:after {
+    content: "";
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    height: 3px;
+    width: 100%;
+    height: 600px;
+    background: #5c7e00;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.authBtn:hover:after {
+    top: -250px;
+}
+
+.message {
+    position: absolute;
+    background: #534239;
+    color: #ADC178;
+    width: 300px;
+    top: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.1s all linear;
+}
+
+.textDecoration:hover {
+    text-decoration: underline;
+}
+
+.textDecorationOn {
+    text-decoration: underline;
+}
+
+.lineAnimation {
+    width: 100%;
+    height: 5px;
+    background: #ADC178;
+    animation-duration: 3s;
+    animation-name: lineanimate;
+    animation-timing-function: linear;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    display: block;
+    cursor: pointer;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    display: block;
+    cursor: pointer;
+}
+@keyframes lineanimate {
+    0%{
+        width: 0;
+    } 100% {
+        width: 100%;
+    }
+}
+
+
+@import "tailwindcss"
