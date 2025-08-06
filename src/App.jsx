@@ -7,7 +7,7 @@ import About from './pages/About'
 import Profile from './pages/Profile'
 import AddProduct from './pages/AddProduct'
 import Catalog from './pages/Catalog'
-import ProductDetail from './pages/productDetail'
+import ProductDetail from './pages/ProductDetail'
 import Favorite from './pages/Favorite'
 import Notifications from './pages/Notifications'
 
